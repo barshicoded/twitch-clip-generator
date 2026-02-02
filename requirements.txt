@@ -6,6 +6,7 @@ numpy>=1.24.0
 # Web interface
 Flask>=2.3.0
 Werkzeug>=2.3.0
+gunicorn>=21.0.0
 
 # Optional but recommended
 opencv-python>=4.8.0
