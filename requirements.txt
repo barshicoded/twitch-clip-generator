@@ -3,6 +3,10 @@ yt-dlp>=2023.12.30
 openai-whisper>=20230918
 numpy>=1.24.0
 
+# Web interface
+Flask>=2.3.0
+Werkzeug>=2.3.0
+
 # Optional but recommended
 opencv-python>=4.8.0
 Pillow>=10.0.0
