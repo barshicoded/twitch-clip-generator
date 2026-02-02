@@ -18,7 +18,7 @@ from werkzeug.utils import secure_filename
 from clip_generator import TwitchClipGenerator
 
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 4 * 1024 * 1024 * 1024  # 4GB max file size (Render limit)
+app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB max file size (free tier limit)
 app.config['UPLOAD_FOLDER'] = os.environ.get('UPLOAD_FOLDER', './uploads')
 app.config['CLIP_FOLDER'] = os.environ.get('CLIP_FOLDER', './clips')
 app.config['SECRET_KEY'] = os.urandom(24)

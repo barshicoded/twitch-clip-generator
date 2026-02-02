@@ -43,9 +43,9 @@ class TwitchClipGenerator:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
         
-        # Initialize Whisper for transcription
+        # Initialize Whisper for transcription (tiny = less memory)
         print("Loading Whisper model...")
-        self.whisper_model = whisper.load_model("base")
+        self.whisper_model = whisper.load_model("tiny")
         
         # Initialize Twitch API if credentials provided
         self.twitch = None
