@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://www.twitch.tv/videos/123456789",
+    "name": "Epic Gaming Stream",
+    "min_duration": 15,
+    "max_duration": 45,
+    "max_clips": 5
+  },
+  {
+    "url": "https://www.twitch.tv/videos/987654321",
+    "name": "Just Chatting Highlights",
+    "min_duration": 20,
+    "max_duration": 60,
+    "max_clips": 3
+  }
+]
