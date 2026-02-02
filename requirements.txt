@@ -1,0 +1,14 @@
+# Core dependencies
+yt-dlp>=2023.12.30
+openai-whisper>=20230918
+numpy>=1.24.0
+
+# Optional but recommended
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Twitch API (optional)
+twitchAPI>=3.0.0
+
+# For GPU acceleration (optional)
+# torch>=2.0.0  # If using CUDA for Whisper
