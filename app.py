@@ -50,7 +50,8 @@ def process_vod():
         return jsonify({'error': 'No URL provided'}), 400
     
     # Validate URL
-    if 'twitch.tv' not in vod_url and 'youtube.com' not in vod_url:
+    valid_platforms = ['twitch.tv', 'youtube.com', 'youtu.be', 'm.twitch.tv']
+    if not any(platform in vod_url for platform in valid_platforms):
         return jsonify({'error': 'Invalid URL. Must be Twitch or YouTube'}), 400
     
     # Create job

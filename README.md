@@ -1,10 +1,10 @@
-# 🎬 Twitch Clip Generator
+# 🎬 Clip Generator
 
-Convert Twitch VODs into viral short-form videos (9:16) with auto-generated subtitles.
+Convert Twitch VODs and YouTube videos into viral short-form videos (9:16) with auto-generated subtitles.
 
 ## ✨ Features
 
-- **Auto-download** Twitch VODs via URL
+- **Auto-download** Twitch VODs and YouTube videos via URL
 - **AI-powered** highlight detection using Whisper transcription
 - **Smart clipping** based on:
   - High-energy phrases ("OMG", "Let's go!", etc.)
@@ -40,8 +40,11 @@ brew install ffmpeg
 ### 2. Run the Tool
 
 ```bash
-# Basic usage
+# Twitch VOD
 python clip_generator.py "https://www.twitch.tv/videos/123456789"
+
+# YouTube video
+python clip_generator.py "https://www.youtube.com/watch?v=AbCdEfGhIjK"
 
 # Custom settings
 python clip_generator.py "https://www.twitch.tv/videos/123456789" \

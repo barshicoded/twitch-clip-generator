@@ -63,8 +63,9 @@ class TwitchClipGenerator:
             self.twitch = None
     
     def download_vod(self, vod_url: str, output_path: str) -> bool:
-        """Download Twitch VOD using yt-dlp"""
-        print(f"Downloading VOD: {vod_url}")
+        """Download video from Twitch or YouTube using yt-dlp"""
+        platform = "YouTube" if "youtube.com" in vod_url or "youtu.be" in vod_url else "Twitch"
+        print(f"Downloading {platform} video: {vod_url}")
         
         cmd = [
             "yt-dlp",
